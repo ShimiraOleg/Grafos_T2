@@ -1,0 +1,149 @@
+========================================
+PROCESSANDO INSTANCIA 1
+========================================
+Amigos (Demanda): 20, Assentos por voo (Capacidade): 10
+
+--- Iniciando Bellman-Ford (Busca do Menor Caminho no Grafo Residual) ---
+   Estado Inicial: Distância da origem 1 é 0. As demais são INF.
+   Relaxando aresta 1 -> 4 (Custo: 1, Residual: 10). Nova dist para 4: 1
+   Relaxando aresta 1 -> 3 (Custo: 3, Residual: 10). Nova dist para 3: 3
+   Relaxando aresta 1 -> 2 (Custo: 2, Residual: 10). Nova dist para 2: 2
+   Nenhuma aresta relaxada na iteracao 2. Bellman-Ford convergiu cedo.
+   Caminho encontrado para o destino 4 com custo total: 1
+
+--- Aumentando Fluxo (Iteracao 1) ---
+   Caminho reverso encontrado: 4 <- 4
+   Gargalo (Flow a enviar): 10
+      Atualizando aresta 1->4: Flow agora e 10/10. Custo acumulado parcial: 10
+   Fluxo Total Atual: 10/20
+
+--- Iniciando Bellman-Ford (Busca do Menor Caminho no Grafo Residual) ---
+   Estado Inicial: Distância da origem 1 é 0. As demais são INF.
+   Relaxando aresta 1 -> 3 (Custo: 3, Residual: 10). Nova dist para 3: 3
+   Relaxando aresta 1 -> 2 (Custo: 2, Residual: 10). Nova dist para 2: 2
+   Relaxando aresta 2 -> 4 (Custo: 5, Residual: 10). Nova dist para 4: 7
+   Nenhuma aresta relaxada na iteracao 2. Bellman-Ford convergiu cedo.
+   Caminho encontrado para o destino 4 com custo total: 7
+
+--- Aumentando Fluxo (Iteracao 2) ---
+   Caminho reverso encontrado: 4 <- 2 <- 4
+   Gargalo (Flow a enviar): 10
+      Atualizando aresta 2->4: Flow agora e 10/10. Custo acumulado parcial: 60
+      Atualizando aresta 1->2: Flow agora e 10/10. Custo acumulado parcial: 80
+   Fluxo Total Atual: 20/20
+
+RESULTADO FINAL INSTANCIA 1
+Custo Minimo Total: 80
+
+========================================
+PROCESSANDO INSTANCIA 2
+========================================
+Amigos (Demanda): 20, Assentos por voo (Capacidade): 100
+
+--- Iniciando Bellman-Ford (Busca do Menor Caminho no Grafo Residual) ---
+   Estado Inicial: Distância da origem 1 é 0. As demais são INF.
+   Relaxando aresta 1 -> 3 (Custo: 3, Residual: 100). Nova dist para 3: 3
+   Relaxando aresta 1 -> 2 (Custo: 2, Residual: 100). Nova dist para 2: 2
+   Relaxando aresta 2 -> 4 (Custo: 5, Residual: 100). Nova dist para 4: 7
+   Nenhuma aresta relaxada na iteracao 2. Bellman-Ford convergiu cedo.
+   Caminho encontrado para o destino 4 com custo total: 7
+
+--- Aumentando Fluxo (Iteracao 1) ---
+   Caminho reverso encontrado: 4 <- 2 <- 4
+   Gargalo (Flow a enviar): 20
+      Atualizando aresta 2->4: Flow agora e 20/100. Custo acumulado parcial: 100
+      Atualizando aresta 1->2: Flow agora e 20/100. Custo acumulado parcial: 140
+   Fluxo Total Atual: 20/20
+
+RESULTADO FINAL INSTANCIA 2
+Custo Minimo Total: 140
+
+========================================
+PROCESSANDO INSTANCIA 3
+========================================
+Amigos (Demanda): 20, Assentos por voo (Capacidade): 1
+
+--- Iniciando Bellman-Ford (Busca do Menor Caminho no Grafo Residual) ---
+   Estado Inicial: Distância da origem 1 é 0. As demais são INF.
+   Relaxando aresta 1 -> 3 (Custo: 3, Residual: 1). Nova dist para 3: 3
+   Relaxando aresta 1 -> 2 (Custo: 2, Residual: 1). Nova dist para 2: 2
+   Relaxando aresta 2 -> 4 (Custo: 5, Residual: 1). Nova dist para 4: 7
+   Nenhuma aresta relaxada na iteracao 2. Bellman-Ford convergiu cedo.
+   Caminho encontrado para o destino 4 com custo total: 7
+
+--- Aumentando Fluxo (Iteracao 1) ---
+   Caminho reverso encontrado: 4 <- 2 <- 4
+   Gargalo (Flow a enviar): 1
+      Atualizando aresta 2->4: Flow agora e 1/1. Custo acumulado parcial: 5
+      Atualizando aresta 1->2: Flow agora e 1/1. Custo acumulado parcial: 7
+   Fluxo Total Atual: 1/20
+
+--- Iniciando Bellman-Ford (Busca do Menor Caminho no Grafo Residual) ---
+   Estado Inicial: Distância da origem 1 é 0. As demais são INF.
+   Relaxando aresta 1 -> 3 (Custo: 3, Residual: 1). Nova dist para 3: 3
+   Relaxando aresta 3 -> 4 (Custo: 4, Residual: 1). Nova dist para 4: 7
+   Relaxando aresta 4 -> 2 (Custo: -5, Residual: 1). Nova dist para 2: 2
+   Nenhuma aresta relaxada na iteracao 2. Bellman-Ford convergiu cedo.
+   Caminho encontrado para o destino 4 com custo total: 7
+
+--- Aumentando Fluxo (Iteracao 2) ---
+   Caminho reverso encontrado: 4 <- 3 <- 4
+   Gargalo (Flow a enviar): 1
+      Atualizando aresta 3->4: Flow agora e 1/1. Custo acumulado parcial: 11
+      Atualizando aresta 1->3: Flow agora e 1/1. Custo acumulado parcial: 14
+   Fluxo Total Atual: 2/20
+
+--- Iniciando Bellman-Ford (Busca do Menor Caminho no Grafo Residual) ---
+   Estado Inicial: Distância da origem 1 é 0. As demais são INF.
+   Nenhuma aresta relaxada na iteracao 1. Bellman-Ford convergiu cedo.
+   Nao foi possivel chegar ao destino 4 no grafo residual.
+
+RESULTADO FINAL INSTANCIA 3
+impossivel (Conseguiu apenas 2 de 20)
+
+========================================
+PROCESSANDO INSTANCIA 4
+========================================
+Amigos (Demanda): 2, Assentos por voo (Capacidade): 1
+
+--- Iniciando Bellman-Ford (Busca do Menor Caminho no Grafo Residual) ---
+   Estado Inicial: Distância da origem 1 é 0. As demais são INF.
+   Relaxando aresta 1 -> 2 (Custo: 1, Residual: 1). Nova dist para 2: 1
+   Relaxando aresta 1 -> 4 (Custo: 2, Residual: 1). Nova dist para 4: 2
+   Relaxando aresta 2 -> 3 (Custo: 1, Residual: 1). Nova dist para 3: 2
+   Relaxando aresta 2 -> 5 (Custo: 3, Residual: 1). Nova dist para 5: 4
+   Relaxando aresta 3 -> 5 (Custo: 1, Residual: 1). Nova dist para 5: 3
+   Nenhuma aresta relaxada na iteracao 2. Bellman-Ford convergiu cedo.
+   Caminho encontrado para o destino 5 com custo total: 3
+
+--- Aumentando Fluxo (Iteracao 1) ---
+   Caminho reverso encontrado: 5 <- 2 <- 3 <- 5
+   Gargalo (Flow a enviar): 1
+      Atualizando aresta 3->5: Flow agora e 1/1. Custo acumulado parcial: 1
+      Atualizando aresta 2->3: Flow agora e 1/1. Custo acumulado parcial: 2
+      Atualizando aresta 1->2: Flow agora e 1/1. Custo acumulado parcial: 3
+   Fluxo Total Atual: 1/2
+
+--- Iniciando Bellman-Ford (Busca do Menor Caminho no Grafo Residual) ---
+   Estado Inicial: Distância da origem 1 é 0. As demais são INF.
+   Relaxando aresta 1 -> 4 (Custo: 2, Residual: 1). Nova dist para 4: 2
+   Relaxando aresta 4 -> 3 (Custo: 2, Residual: 1). Nova dist para 3: 4
+   Relaxando aresta 4 -> 5 (Custo: 100, Residual: 1). Nova dist para 5: 102
+   Relaxando aresta 5 -> 2 (Custo: 3, Residual: 1). Nova dist para 2: 105
+   Relaxando aresta 3 -> 2 (Custo: -1, Residual: 1). Nova dist para 2: 3
+   Relaxando aresta 2 -> 5 (Custo: 3, Residual: 1). Nova dist para 5: 6
+   Nenhuma aresta relaxada na iteracao 4. Bellman-Ford convergiu cedo.
+   Caminho encontrado para o destino 5 com custo total: 6
+
+--- Aumentando Fluxo (Iteracao 2) ---
+   Caminho reverso encontrado: 5 <- 4 <- 3 <- 2 <- 5
+   Gargalo (Flow a enviar): 1
+      Atualizando aresta 2->5: Flow agora e 1/1. Custo acumulado parcial: 6
+      Atualizando aresta 3->2: Flow agora e 0/0. Custo acumulado parcial: 5
+      Atualizando aresta 4->3: Flow agora e 1/1. Custo acumulado parcial: 7
+      Atualizando aresta 1->4: Flow agora e 1/1. Custo acumulado parcial: 9
+   Fluxo Total Atual: 2/2
+
+RESULTADO FINAL INSTANCIA 4
+Custo Minimo Total: 9
+
