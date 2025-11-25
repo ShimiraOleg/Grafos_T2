@@ -1,3 +1,7 @@
+/*
+Grupo: Quinaiers
+Alunos: André Cidade Irie, Guilherme Licori, Mateus de Oliveira Lopes
+*/
 #include <iostream>
 #include <vector>
 #include <queue>
